@@ -1,0 +1,27 @@
+name: MyAssumptionApp
+options:
+  bundleIdPrefix: com.assumption
+settings:
+  GENERATE_INFOPLIST_FILE: YES
+targets:
+  MyAssumptionApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.4"
+    sources: MyAssumptionApp
+    scheme:
+      testTargets:
+        - MyAssumptionAppTests
+        - MyAssumptionAppUITests
+  MyAssumptionAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: MyAssumptionAppTests
+    dependencies:
+      - target: MyAssumptionApp
+  MyAssumptionAppUITests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: MyAssumptionAppUITests
+    dependencies:
+      - target: MyAssumptionApp
