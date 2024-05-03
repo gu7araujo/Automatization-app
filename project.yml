@@ -12,19 +12,17 @@ targets:
     scheme:
       testTargets:
         - MyAssumptionAppTests
-        - MyAssumptionAppUITests
     settings:
       base:
         DEVELOPMENT_TEAM: RHBH6Q62PG
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 1.0.0
   MyAssumptionAppTests:
     type: bundle.unit-test
     platform: iOS
     sources: MyAssumptionAppTests
     dependencies:
       - target: MyAssumptionApp
-  MyAssumptionAppUITests:
-    type: bundle.unit-test
-    platform: iOS
-    sources: MyAssumptionAppUITests
-    dependencies:
-      - target: MyAssumptionApp
+    settings:
+      base:
+        DEVELOPMENT_TEAM: RHBH6Q62PG

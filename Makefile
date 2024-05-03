@@ -8,4 +8,10 @@ clean:
 	rm -fdr *.xcodeproj
 
 build:
-	xcodebuild -scheme MyAssumptionApp build -allowProvisioningUpdates
+	xcodebuild build -scheme MyAssumptionApp -allowProvisioningUpdates
+
+buildTest:
+	xcodebuild build-for-testing -scheme MyAssumptionApp
+
+test:
+	xcodebuild test -scheme MyAssumptionApp
