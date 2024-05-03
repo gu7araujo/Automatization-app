@@ -13,6 +13,9 @@ targets:
       testTargets:
         - MyAssumptionAppTests
         - MyAssumptionAppUITests
+    settings:
+      base:
+        DEVELOPMENT_TEAM: RHBH6Q62PG
   MyAssumptionAppTests:
     type: bundle.unit-test
     platform: iOS

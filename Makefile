@@ -1,8 +1,11 @@
 setup:
-	@echo "Making setup..."
-	rm -fdr *.xcodeproj
 	xcodegen generate
 
+open:
+	xed .
+
 clean:
-	@echo "Cleaning..."
 	rm -fdr *.xcodeproj
+
+build:
+	xcodebuild -scheme MyAssumptionApp build -allowProvisioningUpdates
