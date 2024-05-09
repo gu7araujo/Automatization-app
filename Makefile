@@ -15,3 +15,6 @@ buildTest:
 
 test:
 	xcodebuild test -scheme MyAssumptionApp
+
+lint:
+	swiftlint --autocorrect
