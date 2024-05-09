@@ -17,6 +17,9 @@ targets:
         DEVELOPMENT_TEAM: RHBH6Q62PG
         CURRENT_PROJECT_VERSION: 1
         MARKETING_VERSION: 1.0.0
+    postCompileScripts:
+      - script: /opt/homebrew/bin/swiftlint lint --quiet
+        name: Swiftlint
   MyAssumptionAppTests:
     type: bundle.unit-test
     platform: iOS
