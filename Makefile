@@ -5,7 +5,7 @@ open:
 	xed .
 
 clean:
-	rm -fdr *.xcodeproj
+	git clean -dfX
 
 build:
 	xcodebuild build -scheme MyAssumptionApp -allowProvisioningUpdates
